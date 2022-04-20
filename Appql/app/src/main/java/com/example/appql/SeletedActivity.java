@@ -3,6 +3,7 @@ package com.example.appql;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,8 @@ public class SeletedActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SeletedActivity.this,MainActivity.class);
                 startActivity(intent);
+                MediaPlayer song = MediaPlayer.create(SeletedActivity.this,R.raw.chonmon);
+                song.start();
 
             }
         });

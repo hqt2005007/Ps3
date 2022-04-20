@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -56,11 +57,18 @@ public class profile extends AppCompatActivity {
                 Intent intent = new Intent(profile.this, Admin.class);
                 if (username.getText().toString().equals("Admin")&& password.getText().toString().equals("admin")){
                     Toast.makeText(profile.this, "LOGIN SUCCESSFULL !", Toast.LENGTH_SHORT).show();
-                    startActivity(intent);}
+                    startActivity(intent);
+                    MediaPlayer song = MediaPlayer.create(profile.this,R.raw.dntc);
+                    song.start();
+                }
+
+
 
                 else {
                     txv = (TextView)findViewById(R.id.loginField);
                     txv.setText("Login Failed !");
+                    MediaPlayer song = MediaPlayer.create(profile.this,R.raw.ldn);
+                    song.start();
 
                 }
 
