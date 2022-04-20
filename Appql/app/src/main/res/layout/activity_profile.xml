@@ -25,19 +25,19 @@
             <ScrollView
 
                 android:layout_width="match_parent"
-                android:layout_height="500dp">
+                android:layout_height="570dp">
 
                 <LinearLayout
                     android:id="@+id/pay"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="50dp"
-                        android:text="User name :"
-                    />
+                        android:text="User name :" />
 
                     <EditText
                         android:id="@+id/User"
@@ -45,12 +45,12 @@
                         android:layout_height="match_parent"
                         android:text="Admin"
                         tools:ignore="InvalidId" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="30dp"
-                        android:text="Password :"
-                        />
+                        android:text="Password :" />
 
                     <EditText
                         android:id="@+id/Password"
@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="textPassword"
-                        android:text="Adminadmin"/>
+                        android:text="Adminadmin" />
 
                     <CheckBox
                         android:id="@+id/checkBox"
@@ -73,6 +73,7 @@
                         android:layout_margin="30dp"
                         android:background="@color/E13688"
                         android:text="Login" />
+
                     <TextView
                         android:id="@+id/loginField"
                         android:layout_width="wrap_content"

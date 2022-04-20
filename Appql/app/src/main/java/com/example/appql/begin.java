@@ -3,7 +3,9 @@ package com.example.appql;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -23,6 +25,8 @@ public class begin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(begin.this,MainActivity.class);
                 startActivity(intent);
+                MediaPlayer song = MediaPlayer.create(begin.this,R.raw.loichao);
+                song.start();
             }
         });
     }
