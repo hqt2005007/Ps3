@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Appql</string>
+    <string name="what_do_you_want_to_eat">What do you want to eat ?</string>
+
+    <string name="m_n_ch_nh">Món Chính</string>
+    <string name="m_n_ph">Món Phụ</string>
+    <string name="u_ng">Đồ Uống</string>
+    <string name="combo">Combo</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
